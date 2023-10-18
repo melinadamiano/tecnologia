@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de días para terminar la secundaria</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        body{
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1063%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(228%2c 235%2c 243%2c 1)'%3e%3c/rect%3e%3cpath d='M646.847%2c453.554C690.175%2c455.625%2c739.501%2c448.916%2c760.558%2c410.993C781.267%2c373.695%2c756.782%2c331.132%2c735.278%2c294.286C714.028%2c257.875%2c689%2c216.797%2c646.847%2c216.155C604.024%2c215.503%2c573.418%2c253.54%2c553.623%2c291.519C535.545%2c326.203%2c531.02%2c367.051%2c550.525%2c400.953C570.078%2c434.939%2c607.683%2c451.682%2c646.847%2c453.554' fill='rgba(14%2c 126%2c 163%2c 0.51)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M14.727%2c398.231C29.376%2c397.348%2c42.737%2c390.089%2c50.144%2c377.419C57.624%2c364.625%2c57.709%2c349.233%2c51.137%2c335.95C43.651%2c320.82%2c31.601%2c305.354%2c14.727%2c305.835C-1.708%2c306.303%2c-10.094%2c323.655%2c-18.258%2c337.927C-26.336%2c352.048%2c-36.758%2c367.916%2c-28.951%2c382.188C-20.973%2c396.773%2c-1.867%2c399.232%2c14.727%2c398.231' fill='rgba(14%2c 126%2c 163%2c 0.51)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M201.72171178087228 529.696802545547L276.7019516893427 422.6139223752194 94.63883161054464 454.7165626370766z' fill='rgba(14%2c 126%2c 163%2c 0.51)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1374.9719311416088-96.38938508668298L1294.2576979057546 43.4117677717812 1434.0588507642187 124.12600100763547 1514.773084000073-15.675151850828698z' fill='rgba(14%2c 126%2c 163%2c 0.51)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M955.78%2c619.527C1004.518%2c621.995%2c1057.748%2c608.885%2c1081.574%2c566.297C1105.027%2c524.376%2c1083.982%2c475.119%2c1059.784%2c433.624C1035.832%2c392.551%2c1003.228%2c353.661%2c955.78%2c350.588C903.408%2c347.196%2c849.605%2c371.834%2c825.495%2c418.45C802.785%2c462.36%2c823.395%2c513.096%2c850.276%2c554.583C874.344%2c591.729%2c911.575%2c617.288%2c955.78%2c619.527' fill='rgba(14%2c 126%2c 163%2c 0.51)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M270.403406320316 393.51901134804496L212.5734193997673 293.35453580061096 170.238930772882 451.3489982685936z' fill='rgba(14%2c 126%2c 163%2c 0.51)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1312.557%2c702.269C1367.723%2c702.437%2c1425.655%2c690.94%2c1455.868%2c644.783C1488.736%2c594.57%2c1491.263%2c528.148%2c1460.105%2c476.856C1429.971%2c427.25%2c1370.504%2c405.566%2c1312.557%2c408.864C1260.144%2c411.847%2c1218.61%2c447.194%2c1191.491%2c492.145C1163.221%2c539.004%2c1143.428%2c596.497%2c1170.749%2c643.915C1198.099%2c691.385%2c1257.772%2c702.102%2c1312.557%2c702.269' fill='rgba(14%2c 126%2c 163%2c 0.51)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M372.8234417750705 418.16543853395433L333.7471349047867 494.8570089139164 468.32264390987166 515.1256840293611z' fill='rgba(14%2c 126%2c 163%2c 0.51)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1063'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+        }
+
+        h2{
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <h1><b>¿Cuántos días faltan para terminar la secundaria?</b></h1>
+    <h2><b>Ginno Ansaloni, Fermin Mancini, Melina Damiano</b></h2>    <p><b>5H</b></p>
+    <button id="calendarioButton" class="btn btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+        </svg>    <b>Calcular días</b>
+    </button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularDiasRestantes() {
+            const fechaFinalizacionSecundaria = new Date("2023-12-1");
+            
+            const fechaActual = new Date();
+            
+            const diferencia = fechaFinalizacionSecundaria - fechaActual;
+            
+            const diasRestantes = Math.ceil(diferencia / (1000 * 60 * 60 * 24));
+            
+            document.getElementById("resultado").textContent = `¡Faltan ${diasRestantes} días!`;
+        }
+
+        document.getElementById("calendarioButton").addEventListener("click", calcularDiasRestantes);
+    </script>
+    </body>
+</html>
